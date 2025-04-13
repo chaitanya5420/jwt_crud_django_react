@@ -5,6 +5,8 @@ import Register from './components/authentication/Register';
 import Login from './components/authentication/Login';
 import Home from './components/home/Home';
 import Dashboard from './components/userManagement/Dashboard'; 
+import NavBar from './components/home/NavBar';
+import Test from './components/home/Test';
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <Router>
         <Routes>
           {/* Public Route */}
+          <Route path="/test" element={<Test />} />
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
